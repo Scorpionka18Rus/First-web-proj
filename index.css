@@ -1,0 +1,129 @@
+/*В теле кода я закрепил шрифт, цвет фона страницы, установил правила для текста*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(245, 245, 245);
+    color:black;
+}
+
+/*В заголовке я работаю над выделением его, использую адаптивный текст, присеты для текста, рамки и для отступов*/
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 50px;
+    margin: 40px 40px 35px 20px;
+   
+}
+
+.two{
+    max-width: 25%;
+    margin-left: 500px;
+    margin-top: 40px;
+   object-fit: contain;
+   display: grid;
+   
+
+}
+
+/*В shadowbox я сделал рамку, которая есть на сайте, и в коде указан присет для нее*/
+.shadowbox{
+    width: 140px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 11px 11px 8px #444;
+    padding: 10px 10px 15px 10px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*Тут я сделал просто адаптивное изображение*/
+
+p{
+    font-size: 20px;
+    margin: 20px 15px 15px 10px;
+    color:black;
+    margin: 5px 5px 10px 5px;
+
+}
+
+/*В my-class сделал карточку со слайдером, присет ниже указан, но работает карточка только с разметкой в HTML*/
+
+.my-class-1 a{
+    color: inherit;
+}
+.my-class-2 a{
+    color: inherit;
+}
+.my-class-3 a{
+    color: inherit;
+}
+
+.card{
+    height: 15rem;
+    width: 15rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.card img{
+   height: 100%;
+   width: 100%; 
+}
+.card:hover .details{
+    opacity: 1;
+    height: 100%;
+}
+.details{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    inline-size: 100%;
+    height: 0%;
+    background: rgba(130, 175, 176, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.box{
+    display: inline-table;
+    list-style:inside;
+    border: 4px solid rosybrown;
+    border-radius: 11px;
+    padding: .2em;
+    margin-inline-start: 5px;
+    overflow: auto;
+   
+}
+h4{
+    margin-left: 30px;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 2px solid #333;
+    margin: 0 0 1em 0;
+    padding: 10px;
+    width: 25%;
+}
+input[type="submit"] {
+    border: 3px solid #ccc;
+    background-color:rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px 2em;
+    color:rgb(245, 245, 245);
+}
+input[type="Submit"]:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
